@@ -86,7 +86,7 @@ export default function KrishnaChatbot() {
       console.error("Error querying chatbot:", error);
       const errorMessage: Message = {
         id: Date.now(),
-        text: "Sorry, I encountered an error while processing your request.",
+        text: "Due high traffic and server load, I am currently unable to answer your question. Please try again later.",
         sender: "bot",
       };
       setMessages((prevMessages) => [...prevMessages, errorMessage]);
